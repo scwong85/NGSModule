@@ -1,0 +1,34 @@
+#select which module to run, specify "1" for the module intended to run, "0" otherwise
+quality_checking:1
+cutting_adapter:0
+assembly:0
+sort_index_bamfile:0
+mark_duplicate:0
+
+#path to raw sequence file
+rawfile:/home/scwong/Desktop/Desktop/Bioinfo/MouseRNASeq/seq1.fastq.gz
+
+###Cutting adapter###
+#adapter sequence
+adapter:ATCTCTAGCCGTCTTCTGCTTG
+
+#output file after cutting adapter
+cutadaptout:cutadaptout.fastq
+
+###mapping and assembly###
+#path to reference genome file
+refgenome:/home/scwong/Desktop/Desktop/Bioinfo/MouseRNASeq/entry.fasta
+
+#index header for reference genome, pre-constructed index needed
+refindex:mouse_index
+
+#tophat output folder
+tophatout:test_tophat
+
+###Sorting and indexing bam file name###
+sortedfile:sorted
+
+###marking duplicate###
+#output after marking duplicate
+markdup:marked
+
